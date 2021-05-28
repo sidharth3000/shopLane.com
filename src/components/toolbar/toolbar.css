@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet");
+
+.toolbar
+{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	height: 60px;
+	background-color: #2770B6;
+	position: fixed;
+	top: 0;
+	z-index: 200;
+	width: 100%;
+	/*margin-bottom: 100px;*/
+}
+
+.ul
+{
+	list-style: none;
+}
+
+.link
+{
+	text-decoration: none;
+	color: white;
+	margin: 20px;
+}
+
+.li
+{
+	display: inline;
+	padding: 10px;
+	color: white;
+	font-family: 'Monda', sans-serif;
+	cursor: pointer;
+}
+
+.li:hover
+{
+	border-bottom: 2px solid  white;
+	color:  #FFB327;
+}
+
+.search
+{
+	height: 20px;
+	width: 50%;
+	margin-top: 15px;
+	border-radius: 5px;
+	border: 2px solid #FFB327;
+}
+
+.logo
+{
+	height: 50px;
+	width: auto;
+	margin-bottom: 0px;
+	margin-left: 50%;
+}
+
+.shopify
+{
+	color: #FFB327;	
+	font-family: 'Righteous', cursive;
+	letter-spacing: 1px;
+}
+
+.image
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 620px) {
+	.toolbar{
+		display: none;
+	}
+
+	.shopify{
+		display: none;
+	}
+}
+
+@media (max-width: 1036px) {
+	
+	.shopify{
+		display: none;
+	}
+}
+
+.active
+{
+	color: #FFB327;
+	border-bottom: 2px solid #FFB327;
+}
